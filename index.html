@@ -11,7 +11,15 @@
     header {margin: 20px;}
     button {}
     .right {position: absolute; right: 10px; top:10px;}
-    .logo {position: fixed; top: 50%; right: 50%; margin: -100px}
+    .logo {position: absolute; top: 400px; right: 50%; margin: -100px;}
+    #search{position: absolute; top: 430px; right: 50%}
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li{display: inline-block;}
+#belowsearch {position:absolute; top:470px; text-align: center; }
     </style>
     <head>
         <meta charset="utf-8">   
@@ -33,7 +41,14 @@
 
     </div>
     </div>
-    <div class=logo> <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png > </div>
-    </header>
+  </header>
+   <div class=logo> <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png > </div>
+  <form id=search> <input type=search id="query"> </form>
+ 
+  <ul id=belowsearch>
+      <li><button>Google Search</button></li>
+      <li><button>I'm Feeling Lucky</button></li>
+  </ul>
+
     </body>
 </html> 
