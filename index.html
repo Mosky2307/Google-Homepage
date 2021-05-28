@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
     <style>a { padding: 5px; 
@@ -15,13 +17,17 @@
   margin: 0;
   padding: 0;
 }
-li{display: inline-block;}
+li{display: inline-block; margin: 0 5px; }
 #flexbox {display: flex; justify-content: center; flex-direction: column; height: 600px; margin: auto; width: 675px; align-items: center;}
 #search {margin: 20px;}
-    </style>
+button {border: none; padding: 10px 15px ;}
+.below {background-color: #f8f9fa; font-family: Roboto; font-size: 14px;}
+.material-icons { position:absolute;top: 5px}
+</style>
     <head>
         <meta charset="utf-8">   
     <title>Google</title>
+
     </head>
     <body>
         <div>
@@ -34,7 +40,7 @@ li{display: inline-block;}
        <div class=right>
         <a href= https://www.google.com/gmail/about/#>Gmail</a>
         <a href=https://www.google.com/imghp?hl=en&ogbl>Images</a>
-
+        <span class="material-icons">apps</span>
         <a href=https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin><button style="border-radius: 5px;padding: 10px;margin-left:8px;color: #fff;background-color: rgb(26, 115, 232);">Sign In</button></a>
 
     </div>
@@ -45,9 +51,10 @@ li{display: inline-block;}
   <form id=search> <input type=search id="query"> </form>
  
   <ul id=belowsearch>
-      <li><button>Google Search</button></li>
-      <li><button> I'm Feeling Lucky </button> </li>
+      <li><button class="below">Google Search</button></li>
+      <li><button class="below"> I'm Feeling Lucky </button> </li>
   </ul>
 </div>
     </body>
+    
 </html> 
