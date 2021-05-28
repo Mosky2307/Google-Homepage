@@ -22,7 +22,11 @@ li{display: inline-block; margin: 0 5px; }
 #search {margin: 20px;}
 button {border: none; padding: 10px 15px ;}
 .below {background-color: #f8f9fa; font-family: Roboto; font-size: 14px;}
-.material-icons { position:absolute;top: 5px}
+#appicon { position:absolute;top: 5px}
+.search {border-radius: 50px; width: 487px; height:45px; border-color: #f8f9fa; padding-left: 30px; padding-right: 30px;}
+#searchbar {display:flex; width:582px; flex-direction: row; align-items: center;}
+#searchicon {position: relative; left: 50px; color: darkgray;}
+#micicon {position:relative; right: 50px;}
 </style>
     <head>
         <meta charset="utf-8">   
@@ -40,7 +44,7 @@ button {border: none; padding: 10px 15px ;}
        <div class=right>
         <a href= https://www.google.com/gmail/about/#>Gmail</a>
         <a href=https://www.google.com/imghp?hl=en&ogbl>Images</a>
-        <span class="material-icons">apps</span>
+        <span class="material-icons" id=appicon>apps</span>
         <a href=https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin><button style="border-radius: 5px;padding: 10px;margin-left:8px;color: #fff;background-color: rgb(26, 115, 232);">Sign In</button></a>
 
     </div>
@@ -48,7 +52,13 @@ button {border: none; padding: 10px 15px ;}
   </header>
 <div id=flexbox>
    <div class=logo> <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png > </div>
-  <form id=search> <input type=search id="query"> </form>
+  <div id=searchbar>
+    <span class="material-icons" id="searchicon"> search </span>
+    <form id=search> 
+    <input type=search id="query" class="search"> 
+      </form>
+      <span class="material-icons" id=micicon> mic </span>
+      </div>
  
   <ul id=belowsearch>
       <li><button class="below">Google Search</button></li>
