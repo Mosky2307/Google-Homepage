@@ -9,17 +9,15 @@
     font-family: Roboto; 
     font-size: 14px;}
     header {margin: 20px;}
-    button {}
     .right {position: absolute; right: 10px; top:10px;}
-    .logo {position: absolute; top: 400px; right: 50%; margin: -100px;}
-    #search{position: absolute; top: 430px; right: 50%}
     ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 li{display: inline-block;}
-#belowsearch {position:absolute; top:470px; text-align: center; }
+#flexbox {display: flex; justify-content: center; flex-direction: column; height: 700px; margin: auto; width: 675px; align-items: center;}
+#search {margin: 20px;}
     </style>
     <head>
         <meta charset="utf-8">   
@@ -42,13 +40,14 @@ li{display: inline-block;}
     </div>
     </div>
   </header>
+<div id=flexbox>
    <div class=logo> <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png > </div>
   <form id=search> <input type=search id="query"> </form>
  
   <ul id=belowsearch>
       <li><button>Google Search</button></li>
-      <li><button>I'm Feeling Lucky</button></li>
+      <li><button> I'm Feeling Lucky </button> </li>
   </ul>
-
+</div>
     </body>
 </html> 
